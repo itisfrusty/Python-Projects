@@ -2,11 +2,10 @@ import openai
 import telebot
 
 # Use OPenAI key for connecting AI to our bot
-openai.api_key = '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'
+openai.api_key = 'some key'
 
 # Our bot token
-bot = telebot.TeleBot("5434746702:AAEUsCGsWqvvc2uAbxJs9AhVy9s1MEakfcs")
-
+bot = telebot.TeleBot("my bot")
 # Function for text questions
 @bot.message_handler(func=lambda _: True)
 def handle_message(message):
